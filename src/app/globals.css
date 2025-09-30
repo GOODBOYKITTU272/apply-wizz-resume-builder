@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+@import url("/fonts/fonts.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold inline-block rounded-2xl px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-2xl px-8 py-4 font-bold transition-all duration-300 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 shadow-md hover:shadow-lg;
+  }
+  .btn-accent {
+    @apply bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold inline-block rounded-2xl px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  .text-primary {
+    @apply text-blue-600 !important;
+  }
+  .bg-primary {
+    @apply bg-blue-600;
+  }
+  .text-brand {
+    @apply text-gray-900;
+  }
+  .bg-brand {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700;
+  }
+  .outline-theme-blue {
+    @apply hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600;
+  }
+  .outline-theme-green {
+    @apply hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600;
+  }
+  .within-outline-theme-blue {
+    @apply focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600;
+  }
+  .bg-blue-tint {
+    @apply bg-blue-50;
+  }
+  .bg-soft-gray {
+    @apply bg-gray-50;
+  }
+  .apply-wizz-gradient {
+    @apply bg-gradient-to-r from-blue-600 via-blue-700 to-green-600;
+  }
+  .apply-wizz-text-gradient {
+    @apply bg-gradient-to-r from-blue-600 via-blue-700 to-green-600 bg-clip-text text-transparent;
+  }
+}
+
+:root {
+  /* Apply Wizz Brand Colors */
+  --jet-black: #1E1E1E;
+  --fluorescent-green: #29FE29;
+  --bright-blue: #2C76FF;
+  --soft-gray: #F5F5F5;
+  --blue-tint: #EFFBFF;
+  --deep-gray: #1A1A1A;
+  --yellow-accent: #FFDE59;
+  --coral-red: #FF5C5C;
+  
+  /* Legacy theme variables for compatibility */
+  --theme-purple: #2C76FF; /* Updated to bright blue */
+  --theme-blue: #29FE29; /* Updated to fluorescent green */
+  
+  /* Layout variables */
+  --top-nav-bar-height: 3.5rem;
+  --resume-control-bar-height: 3rem;
+  --resume-padding: 1.5rem;
+}
